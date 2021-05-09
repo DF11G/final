@@ -1,0 +1,28 @@
+/* miniprogram/pages/score/score.wxss */
+.weui-label-xueqi{
+  margin-left: 60rpx;
+}
+.weui-select weui-select_in-select-after{
+  display: flex;
+  align-items: center;
+}
+.select-text{
+  margin-left: 120rpx;
+}
+.scoer-list-item{
+  display: flex;
+  padding: 0rpx 20rpx 0rpx 20rpx;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 200rpx;
+  background-color: cornflowerblue;
+  margin: 10rpx 0rpx 10rpx 0rpx;
+
+}
+.scoer-list-item-course{
+  color: black;
+}
+.scoer-list-item-score{
+  color: black;
+}

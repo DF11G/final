@@ -1,38 +1,54 @@
 {
   "pages": [
     "pages/playlist/playlist",
+    "pages/score/score",
     "pages/blog/blog",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/musiclist/musiclist"
   ],
+  "entryPagePath": "pages/score/score",
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
-    "color":"#474747",
+    "color": "#474747",
     "selectedColor": "#d43c43",
-    "list": [{
-      "pagePath": "pages/playlist/playlist",
-      "text": "音乐",
-      "iconPath": "images/music.png",
-      "selectedIconPath": "images/musicOnClick.png"
-    },
-    {
-      "pagePath": "pages/blog/blog",
-      "text": "发现",
-      "iconPath": "images/find.png",
-      "selectedIconPath": "images/findOnClick.png"
-    },
-    {
-      "pagePath": "pages/profile/profile",
-      "text": "我",
-      "iconPath": "images/user.png",
-      "selectedIconPath": "images/userOnClick.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/playlist/playlist",
+        "text": "音乐",
+        "iconPath": "images/music.png",
+        "selectedIconPath": "images/musicOnClick.png"
+      },
+      {
+        "pagePath": "pages/score/score",
+        "text": "成绩",
+        "iconPath": "images/score.png",
+        "selectedIconPath": "images/scoreOnClick.png"
+      },
+      {
+        "pagePath": "pages/blog/blog",
+        "text": "发现",
+        "iconPath": "images/find.png",
+        "selectedIconPath": "images/findOnClick.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/userOnClick.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
 }

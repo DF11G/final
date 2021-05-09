@@ -1,0 +1,34 @@
+<!--miniprogram/pages/score/score.wxml-->
+<mp-form-page title="成绩查询" subtitle="">
+  <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+    <mp-cells title="输入您的教务系统信息" footer="">
+      <mp-cell prop="qq" title="学号" ext-class="" required>
+        <input bindinput="xueHaoInputChange" data-field="qq" class="weui-input" placeholder="请输入学号" />
+      </mp-cell>
+      <mp-cell prop="qq" title="密码" ext-class="" required>
+        <input bindinput="passwordInputChange" data-field="qq" class="weui-input" type="password" placeholder="请输入密码" />
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd weui-cell__hd_in-select-after">
+      <view class="weui-label-xueqi">学期</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker bindchange="bindXueQiChange" value="{{xueQiIndex}}" range="{{xueQiList}}">
+        <view class="weui-select weui-select_in-select-after">
+          <view class="select-text">{{xueQiList[xueQiIndex]}}</view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view slot="button">
+    <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+  </view>
+</mp-form-page>
+<view class='score-list' wx:for="{{scoreList}}" wx:key="id">
+  <view class="scoer-list-item">
+    <view class="scoer-list-item-course">{{item.kcmc}}</view>
+    <view class="scoer-list-item-score">{{item.zcj}}</view>
+  </view>
+</view>
