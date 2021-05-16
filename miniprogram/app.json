@@ -4,7 +4,8 @@
     "pages/score/score",
     "pages/blog/blog",
     "pages/profile/profile",
-    "pages/musiclist/musiclist"
+    "pages/musiclist/musiclist",
+    "pages/demo/demo"
   ],
   "entryPagePath": "pages/score/score",
   "window": {

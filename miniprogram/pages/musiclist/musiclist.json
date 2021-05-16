@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "q-musiclist": "/components/musiclist/q-musiclist"
+  }
 }

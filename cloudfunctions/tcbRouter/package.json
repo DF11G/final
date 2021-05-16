@@ -1,5 +1,5 @@
 {
-  "name": "getMusic",
+  "name": "tcbRouter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
     "tcb-router": "^1.1.2",
     "wx-server-sdk": "~2.4.0"
   }

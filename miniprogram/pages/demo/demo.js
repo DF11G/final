@@ -1,36 +1,39 @@
-// pages/musiclist/musiclist.js
+// pages/demo/demo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    musiclist: [], // 歌曲列表
-    listInfo: {} // 歌曲的信息
+
+  },
+
+  getMusicInfo: function(){
+    wx.cloud.callFunction({
+      name: 'tcbRouter',
+      data: {
+        $url: 'music'
+      }
+    }).then((res)=>{
+      console.log(res)
+    })
+  },
+  getMovieInfo: function(){
+    wx.cloud.callFunction({
+      name: 'tcbRouter',
+      data: {
+        $url: 'movie'
+      }
+    }).then((res)=>{
+      console.log(res)
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)
-    wx.cloud.callFunction({
-      name: 'getMusic',
-      data: {
-        playlistId: options.playlistId,
-        $url: 'musiclist'
-      }
-    }).then((res) => {
-      console.log(res)
-      const playlist = res.result.playlist
-      this.setData({
-        musiclist: playlist.tracks,
-        listInfo: {
-          coverImgUrl: playlist.coverImgUrl,
-          name: playlist.name
-        }
-      })
-    })
+
   },
 
   /**
