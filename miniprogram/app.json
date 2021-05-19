@@ -5,14 +5,16 @@
     "pages/blog/blog",
     "pages/profile/profile",
     "pages/musiclist/musiclist",
-    "pages/demo/demo"
+    "pages/demo/demo",
+    "pages/player/player",
+    "pages/blog-edit/blog-edit"
   ],
   "entryPagePath": "pages/score/score",
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "BJFU校园便利",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
@@ -34,15 +36,9 @@
       },
       {
         "pagePath": "pages/blog/blog",
-        "text": "发现",
+        "text": "博客",
         "iconPath": "images/find.png",
         "selectedIconPath": "images/findOnClick.png"
-      },
-      {
-        "pagePath": "pages/profile/profile",
-        "text": "我",
-        "iconPath": "images/user.png",
-        "selectedIconPath": "images/userOnClick.png"
       }
     ]
   },
@@ -51,5 +47,8 @@
   "useExtendedLib": {
     "kbone": true,
     "weui": true
-  }
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ]
 }

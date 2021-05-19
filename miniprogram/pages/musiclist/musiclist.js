@@ -30,7 +30,15 @@ Page({
           name: playlist.name
         }
       })
+      this.setMusicList()
+      wx.hideLoading({
+        success: (res) => {},
+      })
     })
+  },
+
+  setMusicList(){
+    wx.setStorageSync('musiclist', this.data.musiclist)
   },
 
   /**

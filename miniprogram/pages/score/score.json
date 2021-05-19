@@ -8,5 +8,6 @@
     "mp-cell": "weui-miniprogram/cell/cell",
     "mp-checkbox": "weui-miniprogram/checkbox/checkbox",
     "mp-checkbox-group": "weui-miniprogram/checkbox-group/checkbox-group"
-  }
+  },
+  "navigationBarTitleText": "成绩"
 }

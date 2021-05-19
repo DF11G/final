@@ -22,7 +22,7 @@ Component({
   methods: {
     goToMusiclist() {
       wx.navigateTo({
-        url: `../../pages/musiclist/musiclist?playlistId=${this.data.playlist.id}`,
+        url: `../../pages/musiclist/musiclist?playlistId=${this.properties.playlist.id}`,
       })
     }
   }

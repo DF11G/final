@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "q-progress-bar": "/components/progress-bar/q-progress-bar"
+  },
+  "disableScroll": true
+}
